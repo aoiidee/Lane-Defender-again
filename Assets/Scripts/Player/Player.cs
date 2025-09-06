@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Threading;
+using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -80,7 +83,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (moving)
         {
